@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD495"
+    tools:context=".EditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/owner">
+
+                    <EditText
+                        android:id="@+id/url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFBAC"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Url"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout55"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/owner">
+
+                    <EditText
+                        android:id="@+id/owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFBAC"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Owner"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/owner">
+
+                        <EditText
+                            android:id="@+id/editTitulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFBAC"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Titulo"
+                            android:inputType="textPersonName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="#FFFBAC"
+                        android:layout_weight="1"
+                        android:text="Lineas"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/lineas"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#FFFBAC"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFBAC"
+                        android:text="Lenguajes"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+
+                    <Spinner
+                        android:id="@+id/editEstilo"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="#FFFBAC"
+                        android:gravity="center"
+                        android:layout_weight="2"/>
+
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFBAC"
+                        android:text="Estilos"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1" />
+
+
+                    <Spinner
+                        android:id="@+id/editLenguaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="#FFFBAC"
+                        android:layout_weight="2"/>
+
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/editCodigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFFBAC"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Código"
+                        android:inputType="textMultiLine" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
